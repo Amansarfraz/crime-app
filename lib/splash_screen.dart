@@ -34,12 +34,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     // Redirect to HomeScreen after 3 seconds
-    Future.delayed(const Duration(seconds: 3), () {
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(builder: (context) => const HomeScreen()),
-      );
-    });
+    Future.delayed(const Duration(seconds: 3), () {});
   }
 
   @override
@@ -88,23 +83,23 @@ class _SplashScreenState extends State<SplashScreen> {
 }
 
 // -------------------- HOME SCREEN --------------------
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+// class HomeScreen extends StatelessWidget {
+//   const HomeScreen({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Crime Rate Alert'),
-        backgroundColor: const Color(0xFF1565C0),
-        foregroundColor: Colors.white,
-      ),
-      body: const Center(
-        child: Text(
-          'Welcome to Crime Rate Alert App!',
-          style: TextStyle(fontSize: 18),
-        ),
-      ),
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: const Text('Crime Rate Alert'),
+//         backgroundColor: const Color(0xFF1565C0),
+//         foregroundColor: Colors.white,
+//       ),
+//       body: const Center(
+//         child: Text(
+//           'Welcome to Crime Rate Alert App!',
+//           style: TextStyle(fontSize: 18),
+//         ),
+//       ),
+//     );
+//   }
+// }
